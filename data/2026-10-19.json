@@ -1,0 +1,106 @@
+{
+  "date": "2026-10-19",
+  "generated_at": "2026-10-19T09:04:00+02:00",
+  "headline": "Exemple : en santé 40+, la preuve sociale chiffrée et le « symptôme oublié » font exploser la portée",
+  "takeaways": [
+    "Les avis ne sont plus collés tels quels : on annonce « 800 avis analysés » et on en tire 3 bénéfices. Ça fait étude, pas témoignage.",
+    "La ménopause se vend par un symptôme que personne n'attend (les yeux secs) : un hook « Did you know… » en face caméra prend +751 k de portée en 7 jours.",
+    "Les offres d'abonnement empilent des objets concrets (shaker, boîte, cuillère « d'une valeur de 28 € ») plutôt qu'un pourcentage de remise."
+  ],
+  "formats": [
+    {
+      "name": "Avis agrégés façon étude",
+      "count": 1,
+      "why": "On transforme des centaines d'avis en 3 phrases qui reviennent le plus. Le cerveau lit une donnée, pas un avis isolé.",
+      "recipe": "5 étoiles + 1 citation courte → « analyse de X avis » → 3 bénéfices avec emoji → prix ancré + offre 1re commande."
+    },
+    {
+      "name": "Face caméra « symptôme méconnu »",
+      "count": 1,
+      "why": "Question de surprise dans les 2 premières secondes, normalisation (« 1 personne sur 3 »), puis solution douce. Aucune vente agressive, CTA LEARN_MORE.",
+      "recipe": "« Did you know [problème] can cause [symptôme inattendu] ? » → chiffre rassurant → solution → prise de RDV / page."
+    },
+    {
+      "name": "Image offre empilée",
+      "count": 1,
+      "why": "Une seule image produit, le texte fait le travail : habitude simple + kit offert chiffré + garantie 30 jours.",
+      "recipe": "Bénéfice-habitude en 1re ligne → liste à puces de ce qui est offert (avec valeur) → garantie → mention légale."
+    }
+  ],
+  "top": [
+    {
+      "rank": 1,
+      "scope": "Santé 40+",
+      "brand": "Nutrition Geeks",
+      "format": "Vidéo · avis agrégés",
+      "country": "UK",
+      "media_type": "video",
+      "media_url": "https://medias.trendtrack.io/facebook/video/6404132ebc13cc9b49ba5ce80999d679d3097ee98102df80d34eacc690820f81.mp4",
+      "thumbnail_url": "https://medias.trendtrack.io/facebook/thumbnails/9901c621c02f63cf0baadf9f7a11d86e91e11dc06973d21f1cfd995cce7d498f.jpg",
+      "ad_url": "https://www.facebook.com/ads/library/?id=4051345015169644",
+      "landing_url": "https://www.nutritiongeeks.co/products/magnesium-glycinate-3-in-1",
+      "days_running": 29,
+      "reach_delta_7d": 900055,
+      "est_spend": 53198,
+      "duplicates": 5,
+      "hook": "« Wait… FREE?? » (texte à l'écran, 1re seconde) + texte de la pub qui ouvre sur 5 étoiles et un avis : « Calms my mind, I have more energy… »",
+      "body_summary": "« Une analyse de plus de 800 avis clients révèle les 3 phrases qui reviennent le plus » : meilleur sommeil, plus d'énergie, moins de stress. Puis 3 raisons de les choisir (3 formes de magnésium, 9,99 £ les 90 gélules, fabriqué au Royaume-Uni).",
+      "cta": "SHOP NOW · « 30 % sur la 1re commande + livraison offerte »",
+      "why_it_works": "La preuve sociale est présentée comme un résultat d'analyse : plus crédible qu'un avis seul. Le prix très bas (9,99 £) supprime le risque. Elle tourne depuis 29 jours et prend encore +900 k de portée sur la semaine : c'est une gagnante installée, pas un test.",
+      "steal_this": "Lunela : « Nous avons lu les 1 200 avis de nos clientes de plus de 55 ans. Voici les 3 phrases qu'elles écrivent le plus. » Même structure, avec leurs vrais mots du dossier persona."
+    },
+    {
+      "rank": 2,
+      "scope": "Santé 40+",
+      "brand": "AG1 by Athletic Greens",
+      "format": "Image · offre empilée",
+      "country": "EU (ES principal)",
+      "media_type": "image",
+      "media_url": "https://medias.trendtrack.io/facebook/image/4d66ab23667a75c09e6facd38cc35f878fdb4a28a05aae0e7dfc5797c23594e8.png",
+      "ad_url": "https://www.facebook.com/ads/library/?id=1413357680251982",
+      "landing_url": "https://drinkag1.com/en-eu/campaign/immunity-v5",
+      "days_running": 14,
+      "reach_delta_7d": 978852,
+      "est_spend": 10791,
+      "duplicates": 5,
+      "hook": "« One scoop of AG1 each morning, one habit you actually keep. »",
+      "body_summary": "Liste de ce qui arrive avec l'abonnement : kit de bienvenue (shaker, boîte, cuillère, « d'une valeur de 28 € »), livraison offerte, satisfait ou remboursé 30 jours. Puis une phrase produit simple.",
+      "cta": "SHOP NOW · « Tout ce qu'il faut pour commencer, inclus dans chaque abonnement »",
+      "why_it_works": "Le hook vend une habitude facile à tenir, pas un produit. Le kit chiffré rend l'abonnement concret. Presque +1 M de portée en 7 jours sur une pub de 14 jours : AG1 est en train de la pousser fort.",
+      "steal_this": "Lunela : « Un jelly chaque soir, une habitude que vous tenez vraiment » + ce qui est offert avec le pack (avec une valeur) au lieu d'un pourcentage."
+    },
+    {
+      "rank": 3,
+      "scope": "Santé 40+",
+      "brand": "Boots Opticians",
+      "format": "Vidéo · face caméra",
+      "country": "UK",
+      "media_type": "video",
+      "media_url": "https://medias.trendtrack.io/facebook/video/e4472bdf885abf12e5f2aca197f32c3ba0630c0f03bae1737173205189153fed.mp4",
+      "thumbnail_url": "https://medias.trendtrack.io/facebook/thumbnails/b30a45a7133f1331d30ceb2204f0c02a84dfeca9f2f6b94e524772f831f6fa7d.jpg",
+      "ad_url": "https://www.facebook.com/ads/library/?id=1436566701269504",
+      "landing_url": "https://www.bootsopticians.com/eye-tests/dry-eye-evaluation/",
+      "days_running": 7,
+      "reach_delta_7d": 751070,
+      "est_spend": 7946,
+      "duplicates": 1,
+      "hook": "« Did you know that menopause can affect your eyes too? »",
+      "body_summary": "On parle des bouffées de chaleur et du brouillard mental, mais pas des yeux. Les hormones peuvent causer la sécheresse oculaire (1 personne sur 3 au Royaume-Uni). Parlez-en à un opticien, puis présentation du soin Zest.",
+      "cta": "LEARN MORE · prise de rendez-vous",
+      "why_it_works": "Le symptôme inattendu crée la surprise et le « c'est moi ! ». Le chiffre « 1 sur 3 » normalise. Une pub partenaire (badge) lancée il y a 7 jours qui prend déjà +751 k : signal fort sur l'angle.",
+      "steal_this": "Lunela (sans « you », règle Meta) : « Personne ne m'avait dit que la ménopause pouvait aussi faire ça… » en face caméra, sur un symptôme méconnu tiré du dossier persona."
+    }
+  ],
+  "radar": [
+    {
+      "brand": "Exemple",
+      "event": "Section remplie par l'agent chaque matin",
+      "detail": "nouvelles pubs, pubs qui montent au classement et pics d'impressions chez les marques de ton Brandtracker"
+    }
+  ],
+  "credits": {
+    "used": 5,
+    "remaining": 4471
+  },
+  "notes": "Page d'exemple faite à la main avec 3 vraies pubs TrendTrack, pour valider le design."
+}

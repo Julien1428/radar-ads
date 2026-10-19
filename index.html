@@ -1,0 +1,419 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta name="robots" content="noindex, nofollow" />
+<title>Radar Ads du matin</title>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+<style>
+  :root {
+    --bg: #f7f3ec;
+    --surface: #fffdf9;
+    --surface-2: #f1ebe1;
+    --ink: #1f1b16;
+    --ink-2: #5b5349;
+    --ink-3: #8a8175;
+    --line: #e4dccf;
+    --accent: #d9622b;
+    --accent-soft: #fbe6da;
+    --good: #2f7d4f;
+    --good-soft: #e1f1e6;
+    --tag-1: #2f5fb3; --tag-1-soft: #e2eafa;
+    --tag-2: #8a3fa8; --tag-2-soft: #f2e4f8;
+    --tag-3: #b06d00; --tag-3-soft: #fbefd6;
+    --tag-4: #1f7a74; --tag-4-soft: #dcf2ef;
+    --shadow: 0 1px 2px rgba(31,27,22,.04), 0 8px 24px rgba(31,27,22,.06);
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --bg: #15130f;
+      --surface: #1e1b16;
+      --surface-2: #27231c;
+      --ink: #f3ede3;
+      --ink-2: #c4bbad;
+      --ink-3: #8f8678;
+      --line: #342f27;
+      --accent: #f08a52;
+      --accent-soft: #3a2519;
+      --good: #6cc391;
+      --good-soft: #1b3226;
+      --tag-1: #8fb1f0; --tag-1-soft: #1c2a44;
+      --tag-2: #d39cec; --tag-2-soft: #33203d;
+      --tag-3: #f0c160; --tag-3-soft: #3a2d12;
+      --tag-4: #74d3cb; --tag-4-soft: #15332f;
+      --shadow: 0 1px 2px rgba(0,0,0,.3), 0 8px 24px rgba(0,0,0,.25);
+    }
+  }
+  :root[data-theme="dark"] {
+    --bg: #15130f;
+    --surface: #1e1b16;
+    --surface-2: #27231c;
+    --ink: #f3ede3;
+    --ink-2: #c4bbad;
+    --ink-3: #8f8678;
+    --line: #342f27;
+    --accent: #f08a52;
+    --accent-soft: #3a2519;
+    --good: #6cc391;
+    --good-soft: #1b3226;
+    --tag-1: #8fb1f0; --tag-1-soft: #1c2a44;
+    --tag-2: #d39cec; --tag-2-soft: #33203d;
+    --tag-3: #f0c160; --tag-3-soft: #3a2d12;
+    --tag-4: #74d3cb; --tag-4-soft: #15332f;
+    --shadow: 0 1px 2px rgba(0,0,0,.3), 0 8px 24px rgba(0,0,0,.25);
+  }
+
+  * { box-sizing: border-box; }
+  html, body { margin: 0; }
+  body {
+    background: var(--bg);
+    color: var(--ink);
+    font: 400 16px/1.6 Inter, system-ui, -apple-system, sans-serif;
+    -webkit-font-smoothing: antialiased;
+  }
+  a { color: inherit; }
+  .wrap { max-width: 1080px; margin: 0 auto; padding: 0 16px 80px; }
+
+  /* En-tête */
+  header.top {
+    display: flex; align-items: center; justify-content: space-between; gap: 12px;
+    padding: 20px 0; border-bottom: 1px solid var(--line);
+  }
+  .brand { font: 600 13px/1 Inter, sans-serif; letter-spacing: .12em; text-transform: uppercase; color: var(--ink-3); }
+  .brand b { color: var(--accent); }
+  .controls { display: flex; gap: 8px; align-items: center; }
+  select, .icon-btn {
+    font: 500 14px Inter, sans-serif; color: var(--ink);
+    background: var(--surface); border: 1px solid var(--line); border-radius: 10px;
+    padding: 8px 12px; cursor: pointer;
+  }
+  .icon-btn { width: 38px; padding: 8px 0; text-align: center; }
+
+  .hero { padding: 40px 0 28px; }
+  .date { color: var(--ink-3); font-weight: 500; text-transform: capitalize; }
+  h1 {
+    font: 700 clamp(30px, 5vw, 48px)/1.1 Fraunces, Georgia, serif;
+    margin: 8px 0 20px; letter-spacing: -.01em; text-wrap: balance;
+  }
+  .takeaways { display: grid; gap: 10px; margin: 0; padding: 0; list-style: none; }
+  .takeaways li {
+    background: var(--surface); border: 1px solid var(--line); border-radius: 14px;
+    padding: 14px 16px 14px 48px; position: relative; box-shadow: var(--shadow);
+  }
+  .takeaways li::before {
+    content: attr(data-n); position: absolute; left: 14px; top: 13px;
+    width: 24px; height: 24px; border-radius: 50%;
+    background: var(--accent-soft); color: var(--accent);
+    font: 700 13px/24px Inter, sans-serif; text-align: center;
+  }
+
+  h2 {
+    font: 700 26px/1.2 Fraunces, Georgia, serif; margin: 48px 0 6px;
+  }
+  .sub { color: var(--ink-3); margin: 0 0 18px; font-size: 15px; }
+
+  /* Formats */
+  .formats { display: grid; gap: 12px; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); }
+  .format {
+    background: var(--surface); border: 1px solid var(--line); border-radius: 16px;
+    padding: 18px; box-shadow: var(--shadow);
+  }
+  .format h3 { margin: 0 0 4px; font: 600 17px/1.3 Inter, sans-serif; }
+  .format .count { font-size: 13px; color: var(--accent); font-weight: 600; }
+  .format p { margin: 8px 0 0; color: var(--ink-2); font-size: 15px; }
+  .format .recipe { margin-top: 10px; padding: 10px 12px; background: var(--surface-2); border-radius: 10px; font-size: 14px; }
+
+  /* Filtres */
+  .filters { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 18px; }
+  .chip {
+    font: 500 14px Inter, sans-serif; border: 1px solid var(--line); background: var(--surface);
+    color: var(--ink-2); padding: 6px 12px; border-radius: 999px; cursor: pointer;
+  }
+  .chip[aria-pressed="true"] { background: var(--ink); color: var(--bg); border-color: var(--ink); }
+
+  /* Cartes d'ads */
+  .ads { display: grid; gap: 18px; }
+  .ad {
+    display: grid; grid-template-columns: 300px 1fr; gap: 0;
+    background: var(--surface); border: 1px solid var(--line); border-radius: 18px;
+    overflow: hidden; box-shadow: var(--shadow);
+  }
+  .media { background: var(--surface-2); position: relative; min-height: 260px; }
+  .media img, .media video { width: 100%; height: 100%; object-fit: cover; display: block; max-height: 520px; }
+  .rank {
+    position: absolute; top: 12px; left: 12px; z-index: 1;
+    background: var(--ink); color: var(--bg); font: 700 15px/1 Inter, sans-serif;
+    padding: 8px 10px; border-radius: 10px;
+  }
+  .body { padding: 20px 22px; min-width: 0; }
+  .meta { display: flex; flex-wrap: wrap; gap: 6px; align-items: center; margin-bottom: 8px; }
+  .tag { font: 600 12px/1 Inter, sans-serif; padding: 5px 9px; border-radius: 999px; }
+  .t1 { background: var(--tag-1-soft); color: var(--tag-1); }
+  .t2 { background: var(--tag-2-soft); color: var(--tag-2); }
+  .t3 { background: var(--tag-3-soft); color: var(--tag-3); }
+  .t4 { background: var(--tag-4-soft); color: var(--tag-4); }
+  .tf { background: var(--accent-soft); color: var(--accent); }
+  .ad h3 { margin: 4px 0 2px; font: 700 22px/1.25 Fraunces, Georgia, serif; }
+  .ad h3 a { text-decoration: none; }
+  .ad h3 a:hover { text-decoration: underline; }
+  .stats { display: flex; flex-wrap: wrap; gap: 6px 16px; color: var(--ink-3); font-size: 14px; margin: 6px 0 14px; }
+  .stats b { color: var(--ink); font-weight: 600; }
+  .stats .up b { color: var(--good); }
+  .block { margin: 0 0 12px; }
+  .label { font: 600 11px/1 Inter, sans-serif; letter-spacing: .1em; text-transform: uppercase; color: var(--ink-3); margin-bottom: 5px; }
+  .hook { font: 500 19px/1.4 Fraunces, Georgia, serif; border-left: 3px solid var(--accent); padding-left: 12px; }
+  .txt { color: var(--ink-2); white-space: pre-line; }
+  .why { background: var(--good-soft); border-radius: 12px; padding: 12px 14px; }
+  .why .label { color: var(--good); }
+  .steal { background: var(--accent-soft); border-radius: 12px; padding: 12px 14px; }
+  .steal .label { color: var(--accent); }
+  details { margin-top: 10px; }
+  summary { cursor: pointer; color: var(--ink-3); font-size: 14px; }
+  .links { display: flex; flex-wrap: wrap; gap: 14px; margin-top: 12px; font-size: 14px; }
+  .links a { color: var(--accent); font-weight: 500; }
+
+  /* Radar */
+  .radar { background: var(--surface); border: 1px solid var(--line); border-radius: 16px; box-shadow: var(--shadow); }
+  .radar-row { display: grid; grid-template-columns: 180px 1fr; gap: 12px; padding: 14px 18px; border-top: 1px solid var(--line); }
+  .radar-row:first-child { border-top: 0; }
+  .radar-row .who { font-weight: 600; }
+  .radar-row .what { color: var(--ink-2); }
+  .radar-row .what a { color: var(--accent); }
+
+  footer { margin-top: 56px; color: var(--ink-3); font-size: 13px; border-top: 1px solid var(--line); padding-top: 16px; }
+  .empty, .error { padding: 60px 0; text-align: center; color: var(--ink-3); }
+
+  @media (max-width: 760px) {
+    .ad { grid-template-columns: 1fr; }
+    .media { min-height: 0; }
+    .media img, .media video { max-height: 420px; }
+    .radar-row { grid-template-columns: 1fr; gap: 2px; }
+    .body { padding: 18px 16px; }
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header class="top">
+    <div class="brand"><b>●</b> Radar Ads</div>
+    <div class="controls">
+      <select id="day" aria-label="Choisir un jour"></select>
+      <button class="icon-btn" id="theme" type="button" aria-label="Changer de thème">◐</button>
+    </div>
+  </header>
+  <main id="app"><p class="empty">Chargement du radar…</p></main>
+</div>
+
+<script>
+(function () {
+  "use strict";
+
+  // Le contenu vient des pubs (texte écrit par des inconnus) : tout passe par textContent, jamais innerHTML.
+  function el(tag, attrs, children) {
+    var node = document.createElement(tag);
+    if (attrs) {
+      Object.keys(attrs).forEach(function (k) {
+        var v = attrs[k];
+        if (v === null || v === undefined || v === false) return;
+        if (k === "text") node.textContent = v;
+        else if (k === "className") node.className = v;
+        else node.setAttribute(k, v);
+      });
+    }
+    (children || []).forEach(function (c) { if (c) node.appendChild(c); });
+    return node;
+  }
+  function safeUrl(u) {
+    if (typeof u !== "string") return null;
+    return /^https:\/\//i.test(u) ? u : null;
+  }
+  function fmt(n) {
+    if (n === null || n === undefined || isNaN(n)) return null;
+    n = Number(n);
+    if (Math.abs(n) >= 1e6) return (n / 1e6).toFixed(1).replace(".", ",") + " M";
+    if (Math.abs(n) >= 1e3) return Math.round(n / 1e3) + " k";
+    return String(n);
+  }
+
+  var SCOPE_CLASS = { "Marques suivies": "t1", "Santé 40+": "t2", "Top e-com": "t3", "FR": "t4" };
+
+  // Thème
+  var root = document.documentElement;
+  try { var saved = localStorage.getItem("radar-theme"); if (saved) root.setAttribute("data-theme", saved); } catch (e) {}
+  document.getElementById("theme").addEventListener("click", function () {
+    var dark = root.getAttribute("data-theme") === "dark" ||
+      (!root.getAttribute("data-theme") && window.matchMedia("(prefers-color-scheme: dark)").matches);
+    var next = dark ? "light" : "dark";
+    root.setAttribute("data-theme", next);
+    try { localStorage.setItem("radar-theme", next); } catch (e) {}
+  });
+
+  var app = document.getElementById("app");
+  var daySelect = document.getElementById("day");
+
+  function load(file) {
+    return fetch("data/" + file + "?v=" + Date.now()).then(function (r) {
+      if (!r.ok) throw new Error(r.status);
+      return r.json();
+    });
+  }
+
+  function renderAd(ad) {
+    var media = el("div", { className: "media" }, [el("div", { className: "rank", text: "#" + ad.rank })]);
+    var poster = safeUrl(ad.thumbnail_url) || safeUrl(ad.image_url);
+    var src = safeUrl(ad.media_url);
+    if (ad.media_type === "video" && src) {
+      media.appendChild(el("video", { src: src, poster: poster, controls: "", preload: "none", playsinline: "", muted: "" }));
+    } else if (src || poster) {
+      media.appendChild(el("img", { src: src || poster, alt: "Visuel de la pub " + (ad.brand || ""), loading: "lazy" }));
+    }
+
+    var meta = el("div", { className: "meta" }, [
+      el("span", { className: "tag " + (SCOPE_CLASS[ad.scope] || "t3"), text: ad.scope }),
+      ad.format ? el("span", { className: "tag tf", text: ad.format }) : null,
+      ad.country ? el("span", { className: "tag t3", text: ad.country }) : null
+    ]);
+
+    var title = el("h3", null, [
+      safeUrl(ad.ad_url) ? el("a", { href: ad.ad_url, target: "_blank", rel: "noopener", text: ad.brand }) : el("span", { text: ad.brand })
+    ]);
+
+    var stats = el("div", { className: "stats" });
+    function stat(label, value, up) {
+      if (!value) return;
+      var s = el("span", { className: up ? "up" : "" });
+      s.appendChild(el("b", { text: value }));
+      s.appendChild(document.createTextNode(" " + label));
+      stats.appendChild(s);
+    }
+    stat("portée sur 7 j", ad.reach_delta_7d ? "+" + fmt(ad.reach_delta_7d) : null, true);
+    stat("jours en ligne", ad.days_running ? String(ad.days_running) : null);
+    stat("dépense estimée", ad.est_spend ? fmt(ad.est_spend) + " €" : null);
+    stat("variantes", ad.duplicates ? String(ad.duplicates) : null);
+
+    function block(label, text, cls) {
+      if (!text) return null;
+      return el("div", { className: "block " + (cls || "") }, [
+        el("div", { className: "label", text: label }),
+        el("div", { className: cls === "hook" ? "" : "txt", text: text })
+      ]);
+    }
+
+    var body = el("div", { className: "body" }, [
+      meta, title, stats,
+      ad.hook ? el("div", { className: "block" }, [el("div", { className: "label", text: "Hook" }), el("div", { className: "hook", text: ad.hook })]) : null,
+      block("Body", ad.body_summary),
+      block("CTA & offre", ad.cta),
+      block("Pourquoi ça marche", ad.why_it_works, "why"),
+      block("À reprendre chez nous", ad.steal_this, "steal")
+    ]);
+
+    if (ad.full_copy) {
+      var d = el("details", null, [el("summary", { text: "Lire le texte complet de la pub" }), el("p", { className: "txt", text: ad.full_copy })]);
+      body.appendChild(d);
+    }
+    var links = el("div", { className: "links" });
+    if (safeUrl(ad.ad_url)) links.appendChild(el("a", { href: ad.ad_url, target: "_blank", rel: "noopener", text: "Voir la pub →" }));
+    if (safeUrl(ad.landing_url)) links.appendChild(el("a", { href: ad.landing_url, target: "_blank", rel: "noopener", text: "Page de vente →" }));
+    if (links.childNodes.length) body.appendChild(links);
+
+    return el("article", { className: "ad", "data-scope": ad.scope }, [media, body]);
+  }
+
+  function render(r) {
+    app.textContent = "";
+    var dateLabel = r.date;
+    try {
+      dateLabel = new Date(r.date + "T09:00:00").toLocaleDateString("fr-FR", { weekday: "long", day: "numeric", month: "long", year: "numeric" });
+    } catch (e) {}
+
+    var hero = el("section", { className: "hero" }, [
+      el("div", { className: "date", text: dateLabel }),
+      el("h1", { text: r.headline || "Le radar du matin" })
+    ]);
+    if (Array.isArray(r.takeaways) && r.takeaways.length) {
+      var ul = el("ul", { className: "takeaways" });
+      r.takeaways.forEach(function (t, i) { ul.appendChild(el("li", { "data-n": String(i + 1), text: t })); });
+      hero.appendChild(ul);
+    }
+    app.appendChild(hero);
+
+    if (Array.isArray(r.formats) && r.formats.length) {
+      app.appendChild(el("h2", { text: "Les formats qui tournent" }));
+      app.appendChild(el("p", { className: "sub", text: "Ce qui revient le plus parmi les pubs qui scalent ce matin." }));
+      var grid = el("div", { className: "formats" });
+      r.formats.forEach(function (f) {
+        grid.appendChild(el("div", { className: "format" }, [
+          el("h3", { text: f.name }),
+          f.count ? el("div", { className: "count", text: f.count + " pub" + (f.count > 1 ? "s" : "") + " dans le top" }) : null,
+          el("p", { text: f.why }),
+          f.recipe ? el("div", { className: "recipe", text: "Recette : " + f.recipe }) : null
+        ]));
+      });
+      app.appendChild(grid);
+    }
+
+    if (Array.isArray(r.top) && r.top.length) {
+      app.appendChild(el("h2", { text: "Le top du matin" }));
+      app.appendChild(el("p", { className: "sub", text: "Classées par vitesse de scaling sur les 7 derniers jours." }));
+      var scopes = [];
+      r.top.forEach(function (a) { if (scopes.indexOf(a.scope) < 0) scopes.push(a.scope); });
+      var filters = el("div", { className: "filters", role: "group", "aria-label": "Filtrer par périmètre" });
+      var list = el("div", { className: "ads" });
+      ["Tout"].concat(scopes).forEach(function (s, i) {
+        var b = el("button", { className: "chip", type: "button", "aria-pressed": i === 0 ? "true" : "false", text: s });
+        b.addEventListener("click", function () {
+          filters.querySelectorAll(".chip").forEach(function (c) { c.setAttribute("aria-pressed", "false"); });
+          b.setAttribute("aria-pressed", "true");
+          list.querySelectorAll(".ad").forEach(function (a) {
+            a.style.display = (s === "Tout" || a.getAttribute("data-scope") === s) ? "" : "none";
+          });
+        });
+        filters.appendChild(b);
+      });
+      app.appendChild(filters);
+      r.top.forEach(function (a) { list.appendChild(renderAd(a)); });
+      app.appendChild(list);
+    }
+
+    if (Array.isArray(r.radar) && r.radar.length) {
+      app.appendChild(el("h2", { text: "Chez les marques que tu suis" }));
+      app.appendChild(el("p", { className: "sub", text: "Ce qui a bougé depuis hier dans ton Brandtracker." }));
+      var box = el("div", { className: "radar" });
+      r.radar.forEach(function (x) {
+        var what = el("div", { className: "what", text: x.event + (x.detail ? " — " + x.detail : "") + " " });
+        if (safeUrl(x.link)) what.appendChild(el("a", { href: x.link, target: "_blank", rel: "noopener", text: "voir" }));
+        box.appendChild(el("div", { className: "radar-row" }, [el("div", { className: "who", text: x.brand }), what]));
+      });
+      app.appendChild(box);
+    }
+
+    var foot = [];
+    if (r.generated_at) foot.push("Généré le " + new Date(r.generated_at).toLocaleString("fr-FR"));
+    if (r.credits) foot.push("TrendTrack : " + r.credits.used + " crédits utilisés, " + r.credits.remaining + " restants");
+    if (r.notes) foot.push(r.notes);
+    app.appendChild(el("footer", { text: foot.join(" · ") }));
+  }
+
+  function show(file) {
+    app.textContent = "";
+    app.appendChild(el("p", { className: "empty", text: "Chargement du radar…" }));
+    load(file).then(render).catch(function () {
+      app.textContent = "";
+      app.appendChild(el("p", { className: "error", text: "Pas de radar pour ce jour (ou fichier illisible)." }));
+    });
+  }
+
+  load("index.json").then(function (days) {
+    days = (days || []).slice().sort().reverse();
+    days.forEach(function (d) { daySelect.appendChild(el("option", { value: d, text: d })); });
+    daySelect.addEventListener("change", function () { show(daySelect.value + ".json"); });
+    show(days.length ? days[0] + ".json" : "latest.json");
+  }).catch(function () { show("latest.json"); });
+})();
+</script>
+</body>
+</html>
