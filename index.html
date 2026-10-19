@@ -4,7 +4,7 @@
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <meta name="robots" content="noindex, nofollow" />
-<title>Radar Ads du matin</title>
+<title>Radar Ads</title>
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
@@ -155,6 +155,8 @@
   .t2 { background: var(--tag-2-soft); color: var(--tag-2); }
   .t3 { background: var(--tag-3-soft); color: var(--tag-3); }
   .t4 { background: var(--tag-4-soft); color: var(--tag-4); }
+  .t5 { background: var(--good-soft); color: var(--good); }
+  .t6 { background: var(--accent-soft); color: var(--accent); }
   .tf { background: var(--accent-soft); color: var(--accent); }
   .ad h3 { margin: 4px 0 2px; font: 700 22px/1.25 Fraunces, Georgia, serif; }
   .ad h3 a { text-decoration: none; }
@@ -238,7 +240,7 @@
     return String(n);
   }
 
-  var SCOPE_CLASS = { "Marques suivies": "t1", "Santé 40+": "t2", "Top e-com": "t3", "FR": "t4" };
+  var SCOPE_CLASS = { "Marques suivies": "t1", "Santé 40+": "t2", "Top e-com": "t3", "FR": "t4", "Gagnantes installées": "t5", "Nouveaux tests": "t6" };
 
   // Thème
   var root = document.documentElement;
@@ -331,8 +333,8 @@
     } catch (e) {}
 
     var hero = el("section", { className: "hero" }, [
-      el("div", { className: "date", text: dateLabel }),
-      el("h1", { text: r.headline || "Le radar du matin" })
+      el("div", { className: "date", text: r.period ? dateLabel + " · " + r.period : dateLabel }),
+      el("h1", { text: r.headline || "Le radar" })
     ]);
     if (Array.isArray(r.takeaways) && r.takeaways.length) {
       var ul = el("ul", { className: "takeaways" });
@@ -343,7 +345,7 @@
 
     if (Array.isArray(r.formats) && r.formats.length) {
       app.appendChild(el("h2", { text: "Les formats qui tournent" }));
-      app.appendChild(el("p", { className: "sub", text: "Ce qui revient le plus parmi les pubs qui scalent ce matin." }));
+      app.appendChild(el("p", { className: "sub", text: "Ce qui revient le plus parmi les pubs qui scalent." }));
       var grid = el("div", { className: "formats" });
       r.formats.forEach(function (f) {
         grid.appendChild(el("div", { className: "format" }, [
@@ -356,8 +358,26 @@
       app.appendChild(grid);
     }
 
+    if (Array.isArray(r.plan) && r.plan.length) {
+      app.appendChild(el("h2", { text: "Le plan créa de la semaine" }));
+      app.appendChild(el("p", { className: "sub", text: "Les créas à produire, inspirées du top." }));
+      var pgrid = el("div", { className: "formats" });
+      r.plan.forEach(function (p) {
+        pgrid.appendChild(el("div", { className: "format" }, [
+          el("div", { className: "meta" }, [
+            el("span", { className: "tag t1", text: p.brand }),
+            p.format ? el("span", { className: "tag tf", text: p.format }) : null
+          ]),
+          p.hook ? el("div", { className: "hook", text: p.hook }) : null,
+          el("p", { text: p.idea }),
+          p.based_on ? el("div", { className: "recipe", text: "Inspirée de la pub #" + p.based_on }) : null
+        ]));
+      });
+      app.appendChild(pgrid);
+    }
+
     if (Array.isArray(r.top) && r.top.length) {
-      app.appendChild(el("h2", { text: "Le top du matin" }));
+      app.appendChild(el("h2", { text: r.period ? "Le top de la semaine" : "Le top du jour" }));
       app.appendChild(el("p", { className: "sub", text: "Classées par vitesse de scaling sur les 7 derniers jours." }));
       var scopes = [];
       r.top.forEach(function (a) { if (scopes.indexOf(a.scope) < 0) scopes.push(a.scope); });
@@ -381,7 +401,7 @@
 
     if (Array.isArray(r.radar) && r.radar.length) {
       app.appendChild(el("h2", { text: "Chez les marques que tu suis" }));
-      app.appendChild(el("p", { className: "sub", text: "Ce qui a bougé depuis hier dans ton Brandtracker." }));
+      app.appendChild(el("p", { className: "sub", text: "Ce qui a bougé dans ton Brandtracker." }));
       var box = el("div", { className: "radar" });
       r.radar.forEach(function (x) {
         var what = el("div", { className: "what", text: x.event + (x.detail ? " — " + x.detail : "") + " " });
