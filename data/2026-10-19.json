@@ -47,14 +47,14 @@
       "brand": "Lunela",
       "format": "Vidéo · Scène dialoguée (mini-film)",
       "hook": "\"Margaret had tried every gummy in the chemist. Her sister told her why none of them worked.\"",
-      "idea": "Mini-film entre deux sœurs de 60 ans, tout à la 3e personne : la sœur explique ce qui change après la ménopause et pourquoi elle a choisi la jelly Lunela. On termine sur le ressenti (moins de fringales à 16 h), sans avant/après corporel.",
+      "idea": "Mini-film entre deux sœurs de 60 ans, tout à la 3e personne : la sœur explique ce qui change après la ménopause et pourquoi elle a choisi les gélules Lunela. On termine sur le ressenti (moins de fringales à 16 h), sans avant/après corporel.",
       "based_on": 8
     },
     {
       "brand": "Lunela",
       "format": "Vidéo · Avis agrégés",
       "hook": "\"We read every review from women over 55. Three words kept coming up.\"",
-      "idea": "Texte à l'écran sur le pot de jelly, puis les 3 expressions qui reviennent le plus dans les vrais avis Lunela, chacune illustrée par une citation à la 3e personne. Angle « mois de la ménopause » en octobre pour répondre à Arctic Goddess.",
+      "idea": "Texte à l'écran sur le pot de gélules Lunela, puis les 3 expressions qui reviennent le plus dans les vrais avis Lunela, chacune illustrée par une citation à la 3e personne. Angle « mois de la ménopause » en octobre pour répondre à Arctic Goddess.",
       "based_on": 15
     },
     {
@@ -278,7 +278,7 @@
       "body_summary": "Format liste : 3 raisons, une par plan, filmées dans une vraie chambre. Le texte empile les preuves (marque de matelas la mieux notée, 60 prix, garantie 10 ans, 200 nuits d'essai, livraison et retours gratuits).",
       "cta": "SHOP NOW, « Start your 200-night Simba trial »",
       "why_it_works": "Le « 3 raisons » promet un format court et facile, et l'essai de 200 nuits enlève le risque. Gagnante installée : 447 jours en ligne et toujours +1,26 M de portée en 7 jours, soit près des deux tiers de sa portée sur 30 jours. Ça accélère, d'où son retour dans le top.",
-      "steal_this": "Lunela : « 3 reasons Margaret (62) keeps a Lunela jelly in her handbag », filmé en UGC à la 3e personne par une créatrice de plus de 55 ans, sans « you ».",
+      "steal_this": "Lunela : « 3 reasons Margaret (62) keeps her Lunela capsules in her handbag », filmé en UGC à la 3e personne par une créatrice de plus de 55 ans, sans « you ».",
       "full_copy": "With Simba’s award-winning mattresses and sleep essentials, better sleep isn’t just out of this world. It’s in your bedroom. 💫 \n\nWhy you’ll drift off with Simba…  \n\n🌍 World’s most 5* rated mattress brand    \n🏆 60+ sleep industry awards   \n✔️ 10-yr guarantee   \n😊 200-night mattress trial  \n🚀 FREE delivery & returns"
     },
     {
@@ -322,7 +322,7 @@
       "body_summary": "Duo complice face caméra, produit en main du début à la fin. Le texte ne parle pas de kilos : il parle de souvenirs plutôt que de balance (« focus on the memories, not the scales »), puis de plans suivis par des cliniciens pour avancer étape par étape.",
       "cta": "LEARN MORE, « Feel Your Best This Summer ☀️ » (page d'avis clients)",
       "why_it_works": "Le duo d'amies rend le sujet minceur léger et rassurant, et le texte évite les promesses de résultats physiques. Gagnante installée : 61 jours en ligne et toujours +1,21 M de portée en 7 jours, environ 71 500 € dépensés. Elle tourne encore alors que le texte parle de l'été.",
-      "steal_this": "Lunela : deux amies de plus de 55 ans qui tendent leur pot de jelly à la caméra, étiquette « Our little 4pm ritual » (notre petit rituel de 16 h). Texte à la 1re personne du pluriel, sans parler de poids ni de corps.",
+      "steal_this": "Lunela : deux amies de plus de 55 ans qui tendent leur pot de gélules Lunela à la caméra, étiquette « Our little 4pm ritual » (notre petit rituel de 16 h). Texte à la 1re personne du pluriel, sans parler de poids ni de corps.",
       "full_copy": "This summer, focus on the memories, not the scales🍦Voy's oral option for weight loss support.📅  Our clinician-led plans are designed to help you feel confident and supported as you reach new milestones."
     },
     {
@@ -388,7 +388,7 @@
       "body_summary": "Scènes du quotidien (bureau, pause) où le produit arrive comme un en-cas facile. Le texte joue la complicité (« Between us, we've got this covered »), liste la gamme (granola, kéfir, barres) et finit sur la signature « Go with your gut ».",
       "cta": "SEE DETAILS, « Gut health, made delicious. »",
       "why_it_works": "Le « vous » et le « nous » créent une relation d'égal à égal, et le bénéfice santé est présenté comme gourmand plutôt que médical. En place depuis 20 jours, +920 000 de portée en 7 jours, rang 1 de la page, ciblage femmes au UK.",
-      "steal_this": "Lunela : « She knows her body. We know what changes after 55. » (3e personne), sur des scènes de son après-midi (bureau, jardin) où la jelly remplace le biscuit de 16 h.",
+      "steal_this": "Lunela : « She knows her body. We know what changes after 55. » (3e personne), sur des scènes de son après-midi (bureau, jardin) où les 2 gélules Lunela du matin l'aident à tenir sans biscuit de 16 h.",
       "full_copy": "You know your gut. We know gut health. Between us, we've got this covered. Bio&Me: granola, kefir, bars and more, packed with plant goodness. Go with your gut."
     },
     {
@@ -601,5 +601,5 @@
     "used": 125,
     "remaining": 4293
   },
-  "notes": "La recherche « Gagnantes installées » (longest_running, 30 jours mini, 50 000 de portée sur 7 jours mini) a renvoyé une erreur de l'outil TrendTrack (« protocol error ») 3 fois, y compris avec sort_by=longestRunning. Aucun crédit n'a été débité pour ces essais. Ce périmètre a donc été rempli avec 3 pubs de plus de 8 semaines encore en forte croissance, trouvées dans les autres recherches : Simba (447 j), Omnilux (241 j) et Voy (61 j). Ölend (166 j) reste en « Top e-com », le périmètre où elle a été trouvée. « Top e-com », « FR » et « Nouveaux tests » n'ont que 3 pubs chacun : ces recherches remontaient surtout des pubs déjà montrées ou de grandes marques écartées (Omoda/Jaecoo, Shopify, Timberland, Lancôme, Roady, Deliveroo, Snapchat, Next, poltronesofà, toom, Westwing). Arctic Goddess et recoverylabspro ciblent les US, donc TrendTrack ne mesure pas leur portée : elles sont suivies via leur rang dans la Bibliothèque publicitaire. Trois pubs déjà montrées ce matin (Gift Soul, BioRoot, Simba) reviennent avec « (toujours là) » car elles accélèrent encore. Ce fichier remplace la première version du 19/10 générée ce matin."
+  "notes": "La recherche « Gagnantes installées » (longest_running, 30 jours mini, 50 000 de portée sur 7 jours mini) a renvoyé une erreur de l'outil TrendTrack (« protocol error ») 3 fois, y compris avec sort_by=longestRunning. Aucun crédit n'a été débité pour ces essais. Ce périmètre a donc été rempli avec 3 pubs de plus de 8 semaines encore en forte croissance, trouvées dans les autres recherches : Simba (447 j), Omnilux (241 j) et Voy (61 j). Ölend (166 j) reste en « Top e-com », le périmètre où elle a été trouvée. « Top e-com », « FR » et « Nouveaux tests » n'ont que 3 pubs chacun : ces recherches remontaient surtout des pubs déjà montrées ou de grandes marques écartées (Omoda/Jaecoo, Shopify, Timberland, Lancôme, Roady, Deliveroo, Snapchat, Next, poltronesofà, toom, Westwing). Arctic Goddess et recoverylabspro ciblent les US, donc TrendTrack ne mesure pas leur portée : elles sont suivies via leur rang dans la Bibliothèque publicitaire. Trois pubs déjà montrées ce matin (Gift Soul, BioRoot, Simba) reviennent avec « (toujours là) » car elles accélèrent encore. Ce fichier remplace la première version du 19/10 générée ce matin. Corrigé à la main le 19/10 : Lunela, ce sont des gélules, pas une jelly (erreur dans les instructions de l'agent, corrigée)."
 }
