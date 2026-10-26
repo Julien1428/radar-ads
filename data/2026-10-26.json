@@ -1,0 +1,20 @@
+{
+  "date": "2026-10-26",
+  "period": "semaine du 19/10 au 25/10",
+  "generated_at": "2026-10-26T06:05:30+01:00",
+  "headline": "Pas de radar complet cette semaine : les crédits TrendTrack sont épuisés jusqu'au 05/11.",
+  "takeaways": [],
+  "formats": [],
+  "plan": [],
+  "top": [],
+  "radar": [
+    {
+      "brand": "Exode naturel",
+      "event": "Nouvelles pubs de la semaine",
+      "detail": "4 nouvelles pubs sur 7 jours (1 hier), 294 pubs actives, 187 nouvelles sur 30 jours. Pas d'analyse des pubs qui montent : il n'y avait plus de crédits.",
+      "link": "https://exodenaturel.fr"
+    }
+  ],
+  "credits": {"used": 1, "remaining": 0},
+  "notes": "Au début du radar, il ne restait qu'1 crédit TrendTrack sur le forfait mensuel (10 000 crédits, période du 05/10 au 05/11, 9 999 déjà utilisés). Ce crédit est parti dans list_tracked_brands, qui n'a renvoyé qu'1 des 7 marques suivies (Exode naturel). L'analyse des pubs qui montent, daily_radar et les 5 recherches search_ads (Santé 40+, Top e-com, FR, Gagnantes installées, Nouveaux tests) n'ont pas pu être lancées. Il n'y a donc ni top, ni formats, ni plan cette semaine, pour ne pas inventer de chiffres. Pour relancer le radar, il faut recharger des crédits (top-up) ou attendre le renouvellement du 05/11."
+}
