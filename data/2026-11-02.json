@@ -1,0 +1,17 @@
+{
+  "date": "2026-11-02",
+  "period": "semaine du 26/10 au 01/11",
+  "generated_at": "2026-11-02T06:06:09+01:00",
+  "headline": "Radar en pause cette semaine : plus de crédits TrendTrack jusqu'au 5 novembre",
+  "takeaways": [
+    "Aucune donnée TrendTrack cette semaine : le compte n'a plus de crédits (10 000 / 10 000 utilisés sur la période du 05/10 au 05/11).",
+    "Pour les créas de la semaine, repartir du plan et du top du radar du 26/10.",
+    "À faire : recharger le compte ou attendre le 05/11, puis relancer le radar."
+  ],
+  "formats": [],
+  "plan": [],
+  "top": [],
+  "radar": [],
+  "credits": {"used": 0, "remaining": 0},
+  "notes": "check_credits au début : 0 crédit restant (quota mensuel de 10 000 entièrement utilisé, pas de recharge, remise à zéro le 2026-11-05T15:21:37Z). list_tracked_brands a échoué ('Not enough credits'), donc aucune recherche (marques suivies, daily_radar, search_ads) n'a pu être faite. Aucun chiffre n'est inventé : top, formats, plan et radar sont vides."
+}
