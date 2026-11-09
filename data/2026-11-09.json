@@ -1,0 +1,17 @@
+{
+  "date": "2026-11-09",
+  "period": "semaine du 02/11 au 08/11",
+  "generated_at": "2026-11-09T06:05:18+01:00",
+  "headline": "Radar en pause pour la 3e semaine : le compte TrendTrack est passé au forfait « starter » avec 0 crédit",
+  "takeaways": [
+    "Aucune donnée TrendTrack cette semaine : le compte affiche 0 crédit, et le renouvellement attendu le 05/11 n'a pas rechargé le compte.",
+    "Le forfait du workspace est maintenant « starter » avec un quota de 0 crédit (mis à jour le 09/11 à 04:54 UTC). Il faut sans doute réactiver le forfait payant ou acheter une recharge.",
+    "Pour les créas de la semaine, repartir du top et du plan du radar du 19/10 : c'est le dernier radar complet (les radars du 26/10 et du 02/11 sont vides)."
+  ],
+  "formats": [],
+  "plan": [],
+  "top": [],
+  "radar": [],
+  "credits": {"used": 0, "remaining": 0},
+  "notes": "check_credits au début : 0 crédit restant (forfait « starter », quota inclus 0, recharge 0, facturation mise à jour le 2026-11-09T04:54:44Z). list_tracked_brands a échoué (« Not enough credits »). Les autres appels (scaling des marques suivies, daily_radar et les 5 recherches search_ads) n'ont donc pas été lancés. check_credits à la fin : toujours 0. Aucun chiffre n'est inventé : top, formats, plan et radar sont vides. Le dépôt a bien été cloné : 20 pubs déjà montrées sur les 28 derniers jours (radar du 19/10)."
+}
